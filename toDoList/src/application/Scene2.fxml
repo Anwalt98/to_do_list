@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="nameLabel" layoutX="37.0" layoutY="22.0" prefHeight="47.0" prefWidth="571.0" text="Welcome, User.">
+         <font>
+            <Font name="Comic Sans MS" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="84.0" text="Your goals">
+         <font>
+            <Font name="Calibri Light" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="createGoalButton" layoutX="51.0" layoutY="349.0" mnemonicParsing="false" onAction="#createNewGoal" text="Create new goal" />
+      <GridPane fx:id="gp" gridLinesVisible="false" layoutX="37.0" layoutY="121.0" prefHeight="197.0" prefWidth="327.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.33331298828125" minWidth="10.0" prefWidth="30.666648864746094" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.3333511352539" minWidth="10.0" prefWidth="297.3333511352539" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="80.66664632161459" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.66664632161459" minHeight="0.0" prefHeight="25.333323160807293" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="133.33334350585938" minHeight="0.0" prefHeight="31.333353678385414" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.99998982747394" minHeight="0.0" prefHeight="29.33331298828125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.99998982747394" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.99998982747394" minHeight="4.666656494140625" prefHeight="30.333333333333343" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.99998982747394" minHeight="10.0" prefHeight="27.666666666666657" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="delBut" layoutX="175.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteGoal" prefHeight="25.0" prefWidth="87.0" text="Delete goal" />
+      <Button fx:id="logoutButton" layoutX="501.0" layoutY="349.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+   </children>
+</AnchorPane>

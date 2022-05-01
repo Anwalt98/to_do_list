@@ -1,0 +1,12 @@
+.root {
+-fx-background-color:"black";
+}
+.label{
+	/*-fx-font-size: 30;*/
+	-fx-text-fill:"white";
+	
+	
+}
+#LoginLabel{
+/*	-fx-font-size:65; */
+}
